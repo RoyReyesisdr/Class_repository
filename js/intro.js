@@ -48,14 +48,18 @@ console.log(1 + 3 + "4");
 console.log("3" + 4 + 1);
 
 
-
-
 // alert, prompt, confirm
+alert("hola");
 
+const nombre = prompt("¿Cómo te llamas?");
+console.log("hola " + nombre);
 
-
-
-
+const respuesta = confirm("¿Tienes sueño?");
+if (respuesta) {
+    console.log("necesitas café");
+} else {
+    console.log("no necesitas café");
+}
 
 
 
