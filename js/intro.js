@@ -62,19 +62,12 @@ if (respuesta) {
 }
 
 
-
-
-
-
-
-
-
-
-
 // funciones tradicionales
+function tomar_cafe() {
+    console.log("Glu glu glu");
+}
 
-
-
+tomar_cafe();
 
 
 
