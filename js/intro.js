@@ -69,9 +69,11 @@ function tomar_cafe() {
 
 tomar_cafe();
 
+function tomar(bebida) {
+    console.log("Tomando " + bebida);
+}
 
-
-
+tomar("té");
 
 
 
