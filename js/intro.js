@@ -14,34 +14,38 @@ console.assert(1 === true);
 console.assert(1 == "1");
 
 
+// variables, constantes
 
+//las constantes no se pueden modificar desde el cliente
+const precio = 59.99;
 
+//manera antigua de declarar variabes, no se recomienda porque 
+//tiene alcance de función
+var robot = "Fanuc";
 
+console.log(robot);
 
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
 
+console.log(i);
 
+//manera nueva de declarar variables, tiene alcance de ámbito {}
+let carrera = "ISDR";
 
+console.log(carrera);
 
+for (let j = 0; j < 10; j++) {
+    console.log(j);
+}
 
+//la siguiente línea marca error porque j murió en el ciclo for
+//console.log(j);
 
+console.log(1 + 3 + "4");
 
-
-
-
-
-// variables, constantes, 
-
-
-
-
-
-
-
-
-
-
-
-
+console.log("3" + 4 + 1);
 
 
 
