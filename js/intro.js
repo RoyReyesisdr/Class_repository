@@ -76,17 +76,22 @@ function tomar(bebida) {
 tomar("té");
 
 
-
-
-
-
-
-
-
 // funciones modernas
+let comer = () => {
+    console.log("Comiendo");
+}
 
+comer();
 
+let comer_variado = (comida) => {
+    console.log("Comiendo " + comida);
+}
 
+comer_variado("torta");
+
+comer = comer_variado;
+
+comer("sandwich");
 
 
 
