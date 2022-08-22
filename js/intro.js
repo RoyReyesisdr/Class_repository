@@ -94,58 +94,14 @@ comer = comer_variado;
 comer("sandwich");
 
 
-
-
-
-
-
-
-
-
-
-
-
 // arreglos
-
-//const arreglo = ["Elemento"];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//arreglo.push("Otro elemento");
-
-
-
-//arreglo[10] = "Uno más";
-
+const arreglo = [1, 2, 3, "Elemento"];
+arreglo.push("ISDR");
+arreglo[10] = "Uno más";
+console.log(arreglo);
 
 //arreglos asociativos
+arreglo["ISDR"] = "Ingeniería en Sistemas Digitales y Robotica";
+console.log(arreglo);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//document.write()
+document.write(arreglo);
