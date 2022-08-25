@@ -13,3 +13,20 @@ function ocultar_descripcion_html() {
 }
 
 elemento_html.onclick = descripcion_html;
+
+let descuento = document.getElementById("descuento");
+descuento.onclick = () => {
+    let porcentaje_descuento = document.getElementById("porcentaje_descuento").value;
+    let contenedor_precio_cafe = document.getElementById("precio_cafe");
+    let contenedor_precio_cerveza = document.getElementById("precio_cerveza");
+
+    let precio_cafe = Number(contenedor_precio_cafe.innerText);
+    precio_cafe = precio_cafe - precio_cafe * porcentaje_descuento / 100;
+    contenedor_precio_cafe.innerText = precio_cafe;
+
+    let precio_cerveza = Number(contenedor_precio_cerveza.innerText);
+    precio_cerveza = precio_cerveza - precio_cerveza * porcentaje_descuento / 100;
+    contenedor_precio_cerveza.innerText = precio_cerveza;
+
+    document.getElementById("promocion").innerHTML = "¡Se aplicó el descuento, disfruta tus bebidas!";
+}

@@ -26,15 +26,15 @@
             <table class="verde">
                 <tfoot>
                     <tr>
-                        <td class="verde">Los precios pueden variar</td>
+                        <td class="verde" id="promocion">Los precios pueden variar con un descuento del <input type="number" id="porcentaje_descuento" value="5">%. <button id="descuento">Aplicar descuento!</button> </td>
                     </tr>
                 </tfoot>
                 <tbody>
                     <tr>
-                        <td>Café</td><td>$35.00</td>
+                        <td>Café</td><td>$ <span id="precio_cafe">35.00</span></td>
                     </tr>
                     <tr id="cerveza_indio">
-                        <td>Cerveza Indio</td><td>$19.00</td>
+                        <td>Cerveza Indio</td><td>$ <span id="precio_cerveza">19.00</span></td>
                     </tr>
                 </tbody>
                 <thead>
