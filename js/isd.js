@@ -30,3 +30,10 @@ descuento.onclick = () => {
 
     document.getElementById("promocion").innerHTML = "¡Se aplicó el descuento, disfruta tus bebidas!";
 }
+
+let porcentaje_descuento = document.getElementById("porcentaje_descuento");
+porcentaje_descuento.onkeyup = () => {
+    if (porcentaje_descuento.value > 20) {
+        document.getElementById("promocion").innerHTML = "Querías hacer trampa... ¡Perdiste tu descuento!";
+    }
+}
