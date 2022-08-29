@@ -7,63 +7,166 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link rel="stylesheet" href="css/estilo.min.css">
+        <!-- <link rel="stylesheet" href="css/estilo.min.css"> -->
 
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <header>
-            <h1>Hello world!</h1> 
-            <nav>
-                <ul class="morado">
-                    <li class="verde">Inicio</li>
-                    <li>Bebidas</li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div>
-                Divisor en bloque.
+        <nav>
+            <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">DAW Robótico</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#">Inicio</a></li>
+            </ul>
             </div>
-            <!-- Estilo en línea en el span -->
-            <p>
-                Hace mucho calor, hay que <span style="color: blue;">hidratarse</span> bien.
-            </p>
-            <table class="verde">
-                <tfoot>
-                    <tr>
-                        <td class="verde" id="promocion">Los precios pueden variar con un descuento del <input type="number" id="porcentaje_descuento" value="5" max="20" min="1">%. <button id="descuento">Aplicar descuento!</button> </td>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <td><span id="label_cafe">Café</span> <div id="imagen_cafe""></div> </td><td>$ <span id="precio_cafe">35.00</span></td>
-                    </tr>
-                    <tr id="cerveza_indio">
-                        <td><span id="label_cerveza">Cerveza Indio</span> <div id="imagen_cerveza"></div> </td><td>$ <span id="precio_cerveza">19.00</span></td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>Bebidas</th><th>Precio</th>
-                    </tr>
-                </thead>
-            </table>
-            <h1>Desarrollo de aplicaciones web</h1>
-            <ol class="morado">
-                <li id="html">HTML<span id="info_html"></span></li>
-                <li>Git</li>
-                <li>CSS</li>
-                <li>Git avanzado</li>
-                <li>Arreglar conflictos</li>
-            </ol>
-        </main>
-        <footer>
-            Clase de desarrollo de aplicaciones web.
+        </nav>
+        <div class="container">
+            <header>
+                <h1>Hello world!</h1> 
+            </header>
+            <main>
+                <div class="row">
+                    <div class="col s12 m4 l1">1</div>
+                    <div class="col s12 m4 l1">2</div>
+                    <div class="col s12 m4 l1">3</div>
+                    <div class="col s12 m4 l1">4</div>
+                    <div class="col s12 m4 l1">5</div>
+                    <div class="col s12 m4 l1">6</div>
+                    <div class="col s12 m4 l1">7</div>
+                    <div class="col s12 m4 l1">8</div>
+                    <div class="col s12 m4 l1">9</div>
+                    <div class="col s12 m4 l1">10</div>
+                    <div class="col s12 m4 l1">11</div>
+                    <div class="col s12 m4 l1">12</div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m4 l3">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="https://imagenes.elpais.com/resizer/UoN9RnIco1ATd4krOSi5T2cBDsU=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/NNXXMNBS4CHQXTXVLCWPIPI5OY.jpg">
+                            </div>
+                            <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col s12 m4 l3">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="https://imagenes.elpais.com/resizer/UoN9RnIco1ATd4krOSi5T2cBDsU=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/NNXXMNBS4CHQXTXVLCWPIPI5OY.jpg">
+                            </div>
+                            <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 l3">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="https://imagenes.elpais.com/resizer/UoN9RnIco1ATd4krOSi5T2cBDsU=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/NNXXMNBS4CHQXTXVLCWPIPI5OY.jpg">
+                            </div>
+                            <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 l3">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="https://imagenes.elpais.com/resizer/UoN9RnIco1ATd4krOSi5T2cBDsU=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/NNXXMNBS4CHQXTXVLCWPIPI5OY.jpg">
+                            </div>
+                            <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <p>
+                    Hace mucho calor, hay que <span style="color: blue;">hidratarse</span> bien.
+                </p>
+                <div class="row">
+                    <div class="col s6 m6 l6">Bebidas</div>
+                    <div class="col s6 m6 l6">Precio</div>
+                </div>
+                <div class="row">
+                    <div class="col s6 m6 l6">
+                        <span id="label_cafe">Café</span> <div id="imagen_cafe"></div>
+                    </div>
+                    <div class="col s6 m6 l6">$ <span id="precio_cafe">35.00</span></div>
+                </div>
+                <div class="row">
+                    <div class="col s6 m6 l6">
+                        <span id="label_cerveza">Cerveza Indio</span> <div id="imagen_cerveza"></div> 
+                    </div>
+                    <div id="cerveza_indio" class="col s6 m6 l6">$ <span id="precio_cerveza">19.00</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m12 l12" id="promocion">
+                        Los precios pueden variar con un descuento del <div class="input-field inline"> <input class="" type="number" id="porcentaje_descuento" value="5" max="20" min="1"> </div>%. <a id="descuento" class="waves-effect waves-light btn"><i class="material-icons left">arrow_downward</i>Aplicar descuento!</a>
+                    </div>
+                </div>
+                
+                <h1>Desarrollo de aplicaciones web</h1>
+                <ul class="collapsible">
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>HTML</div>
+                    <div class="collapsible-body"><span>Hyper Text Markup Language. Es el lenguaje que utilizan los navegadores web para desplegar las páginas web. Idealmente contienen el contenido y estructura de una página.</span></div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">place</i>CSS</div>
+                    <div class="collapsible-body"><span>Cascading Style Sheets.</span></div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Git</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Git avanzado</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        <footer class="page-footer">
+            <div class="container">
+                    
+            </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                © 2022 DAW Robótico
+                </div>
+            </div>
         </footer>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            M.AutoInit();
+        </script>
         <!-- <script src="js/intro.js"></script> -->
         <script src="js/isd.js"></script>
     </body>
