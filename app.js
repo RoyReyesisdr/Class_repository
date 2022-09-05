@@ -27,12 +27,32 @@ for (let item of arreglo) {
 
 const http = require('http');
 
+const robots = ["Atlas", "R2D2", "C3PO", "Wally", "Eva"];
+
 const server = http.createServer( (request, response) => {    
     console.log(request.url);
-    response.setHeader('Content-Type', 'text/html');
-    response.write('<!DOCTYPE html>');
-    response.write("<h1>Hola mundo!</h1>");
-    response.end();
+    if (request.url == "/robots") {
+        response.setHeader('Content-Type', 'text/html');
+        response.write('<!DOCTYPE html>');
+        response.write("<h1>Estos son los mejores robots</h1>");
+        response.write("<ul>");
+        for (let i of robots) {
+            response.write("<li>" + i +"</li>");
+        }
+        response.write("</ul>");
+        response.end();
+    } else if (request.url == "/") {
+        response.setHeader('Content-Type', 'text/html');
+        response.write('<!DOCTYPE html>');
+        response.write("<h1>Hola mundo!</h1>");
+        response.end();
+    } else {
+        response.setHeader('Content-Type', 'text/html');
+        response.write('<!DOCTYPE html>');
+        response.write("<h1>Error 404: El recurso solicitado no existe</h1>");
+        response.end();
+    }
+    
 });
 
 server.listen(3000);
