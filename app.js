@@ -41,6 +41,34 @@ const server = http.createServer( (request, response) => {
         }
         response.write("</ul>");
         response.end();
+    } else if (request.url == "/robots/new" && request.method == "GET") { 
+        response.setHeader('Content-Type', 'text/html');
+        response.write('<!DOCTYPE html>');
+        response.write("<h1>Registrar robot</h1>");
+        response.write('<form action="/robots/new" method="POST">');
+        response.write('<label for="nombre">Nombre del robot: </label>');
+        response.write('<input type="text" id="nombre" name="nombre">');
+        response.write("<br>");
+        response.write("<br>");
+        response.write('<input type="submit" id="enviar" name="enviar" value="Registrar">');
+        response.write("</form>");
+        response.end();
+    } else if (request.url == "/robots/new" && request.method == "POST") {
+        const datos = [];
+        request.on('data', (dato) => {
+            console.log(dato);
+            datos.push(dato);
+        });
+        return request.on('end', () => {
+            const datos_completos = Buffer.concat(datos).toString();
+            console.log(datos_completos);
+            const nuevo_robot = datos_completos.split('&')[0].split('=')[1];
+            robots.push(nuevo_robot);
+            response.setHeader('Content-Type', 'text/html');
+            response.write('<!DOCTYPE html>');
+            response.write("<h1>El nuevo robot fue registrado.</h1>");
+            response.end();
+        });
     } else if (request.url == "/") {
         response.setHeader('Content-Type', 'text/html');
         response.write('<!DOCTYPE html>');
