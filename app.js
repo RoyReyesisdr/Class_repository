@@ -75,6 +75,7 @@ const server = http.createServer( (request, response) => {
         response.write("<h1>Hola mundo!</h1>");
         response.end();
     } else {
+        response.statusCode = 404;
         response.setHeader('Content-Type', 'text/html');
         response.write('<!DOCTYPE html>');
         response.write("<h1>Error 404: El recurso solicitado no existe</h1>");
