@@ -1,0 +1,24 @@
+{
+  "name": "dawrobotico",
+  "version": "1.0.0",
+  "description": "Proyecto de la clase de DAW y BD para ISDRs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ejuarez@bitbucket.org/ejuarez/dawrobotico.git"
+  },
+  "keywords": [
+    "daw",
+    "isdr",
+    "bd",
+    "express",
+    "node",
+    "robots"
+  ],
+  "author": "Eduardo Juárez",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/ejuarez/dawrobotico#readme"
+}
