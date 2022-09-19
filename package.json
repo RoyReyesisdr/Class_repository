@@ -20,5 +20,8 @@
   ],
   "author": "Eduardo Juárez",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/ejuarez/dawrobotico#readme"
+  "homepage": "https://bitbucket.org/ejuarez/dawrobotico#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
