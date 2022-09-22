@@ -4,7 +4,9 @@ const path = require('path');
 
 const app = express();
 
+//Configurar el motor de templates como ejs
 app.set('view engine', 'ejs');
+//Definir la carpeta views como carpeta de vistas para ejs
 app.set('views', 'views');
 
 app.use(express.static(path.join(__dirname, 'public')));
