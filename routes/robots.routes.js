@@ -6,16 +6,7 @@ const router = express.Router();
 const robots = [];
 
 router.get('/new', (request, response, next) => {
-    let html = '<!DOCTYPE html>';
-    html += '<link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>'
-    html += "<h1>Registrar robot</h1>";
-    html += '<form action="/robots/new" method="POST">';
-    html += '<label for="nombre">Nombre del robot: </label>';
-    html += '<input type="text" id="nombre" name="nombre">';
-    html += "<br><br>";
-    html += '<input type="submit" id="enviar" name="enviar" value="Registrar">';
-    html += "</form>";
-    response.send(html); 
+    response.render(path.join('robots','new.ejs')); 
 });
 
 router.post('/new', (request, response, next) => {
