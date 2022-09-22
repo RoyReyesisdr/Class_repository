@@ -3,7 +3,7 @@ const path = require('path');
 
 const router = express.Router();
 
-const robots = ["R2D2", "C3PO"];
+const robots = [];
 
 router.get('/new', (request, response, next) => {
     response.render(path.join('robots','new.ejs')); 
@@ -22,7 +22,6 @@ router.get('/git', (request, response, next) => {
 router.get('/', (request, response, next) => {
     response.render(path.join('robots','list.ejs'), {
         robots: robots,
-        code_injection: '<script>alert("jojojo te hackié")</script>',
     }); 
 });
 

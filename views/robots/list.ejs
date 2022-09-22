@@ -1,11 +1,15 @@
 <%- include('../includes/head.ejs') %>
 
 <h1>Estos son los mejores robots</h1>
-<%= code_injection %>
+
+<% if (robots.length > 0) { %>
 <ul>
     <% for (let r of robots) { %>
         <li><%= r %></li>
     <% } %>
 </ul>
+<% } else { %>
+    <h2>No hay robots registrados.</h2>
+<% } %>
 
 <%- include('../includes/foot.ejs') %>
