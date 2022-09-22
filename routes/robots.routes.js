@@ -7,6 +7,7 @@ const robots = [];
 
 router.get('/new', (request, response, next) => {
     let html = '<!DOCTYPE html>';
+    html += '<link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>'
     html += "<h1>Registrar robot</h1>";
     html += '<form action="/robots/new" method="POST">';
     html += '<label for="nombre">Nombre del robot: </label>';
