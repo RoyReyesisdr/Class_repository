@@ -2,6 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
