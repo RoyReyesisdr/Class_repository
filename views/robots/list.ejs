@@ -2,6 +2,8 @@
 
 <h1>Estos son los mejores robots</h1>
 
+<a href="/robots/new" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+
 <% if (robots.length > 0) { %>
 <ul>
     <% for (let r of robots) { %>
@@ -9,7 +11,9 @@
     <% } %>
 </ul>
 <% } else { %>
-    <h2>No hay robots registrados.</h2>
+    <h3>No hay robots registrados.</h3>
 <% } %>
+
+<a href="/robots/new" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
 
 <%- include('../includes/foot.ejs') %>
