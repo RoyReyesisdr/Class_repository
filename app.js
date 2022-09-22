@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 
@@ -16,7 +17,8 @@ const rutasRobots = require('./routes/robots.routes');
 app.use('/robots', rutasRobots);
 
 app.use((request, response, next) => {
-    response.status(404).send('<h1>Error 404</h1>'); //Manda la respuesta
+    response.status(404);
+    response.sendFile(path.join(__dirname, 'views', 'error.html'));
 });
 
 app.listen(3000);

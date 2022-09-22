@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 const router = express.Router();
 
@@ -20,6 +21,10 @@ router.post('/new', (request, response, next) => {
     console.log(request.body);
     robots.push(request.body.nombre);
     response.redirect('/robots');
+});
+
+router.get('/git', (request, response, next) => {
+    response.sendFile(path.join(__dirname, '..', 'previous',  'frontend', 'git.html'));
 });
 
 router.get('/', (request, response, next) => {
